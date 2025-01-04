@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "location": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "url": {
+      "type": "string"
+    },
+    "comedians": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::comedian.comedian",
+      "mappedBy": "events"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "venue_name": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "text"
+    }
+  }
+}
