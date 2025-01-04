@@ -2,8 +2,8 @@ services:
   - type: web
     name: strapi
     plan: starter
-    buildCommand: yarn install && yarn build
-    startCommand: rsync -a public/ /data/public/ && yarn start
+    buildCommand: npm install && npm run build
+    startCommand: rsync -a public/ /data/public/ && npm run start
     healthCheckPath: /_health
     autoDeploy: false
     runtime: node
