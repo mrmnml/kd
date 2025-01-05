@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comedians",
+  "info": {
+    "singularName": "comedian",
+    "pluralName": "comedians",
+    "displayName": "comedian"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    }
+  }
+}
