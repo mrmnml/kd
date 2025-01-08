@@ -108,6 +108,9 @@ coverage
 ############################
 
 .env
+.env.prod
+strapi.db
+yarn.lock
 license.txt
 exports
 .cache
