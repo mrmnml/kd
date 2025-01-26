@@ -20,6 +20,17 @@
     },
     "cta": {
       "type": "blocks"
+    },
+    "header_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
